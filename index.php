@@ -2,7 +2,10 @@
     $text = "Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Laudantium fugiat in Lorem ad quasi cum numquam commodi Lorem repellendus velit delectus, 
             omnis dolorum nam Lorem tempore ducimus esse odio Lorem.";
-    $text_censored = str_replace("Lorem", "***"; $text)
+
+    $censored_word = $_GET["censored"];
+
+    $text_censored = str_replace("Lorem", "***"; $text);
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +17,7 @@
     <title>Bad Words</title>
 </head>
 <body>
-    
+
     <h1>Uncensored text</h1>
     <p><?= $text ?></p>
 
